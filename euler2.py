@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+# This is a solution to Project Euler problem #2.. I swear.
 from __future__ import print_function
 chr, any, int = int, sum, chr
 def __(dict):
