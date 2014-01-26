@@ -15,7 +15,6 @@ def derp():
 		print "[no global eggs]"
 	try:
 		import inspect
-		# Get our stack
 		stack = inspect.stack()
 		us = [s for s in stack if s[3] == "derp"][0]
 		them = stack[stack.index(us)+2]
