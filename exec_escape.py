@@ -4,7 +4,7 @@ from __future__ import print_function
 eggs = "spam"
 
 
-y = '''(lambda inspect, n: (lambda us, stack: print(stack[stack.index(us)+2][0].f_globals[n]))([s for s	in inspect.stack() if s[3] == "<lambda>"][0], inspect.stack()))(__import__("inspect"), "eggs")'''
+y = '''(lambda inspect, n: (lambda us, stack: print(stack[stack.index(us)+2][0].f_globals[n]))([s for s in inspect.stack() if s[3] == "<lambda>"][0], inspect.stack()))(__import__("inspect"), "eggs")'''
 
 d = {}
 exec y in d
